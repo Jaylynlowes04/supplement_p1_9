@@ -1,8 +1,12 @@
 using System.Collections;
-
+/// <summary>
+/// Class that implements IEnumerable and generates random float numbers.
+/// Throws an InvalidSequenceException if three consecutive numebrs are <= 0.5
+/// </summary>
 public class RandomFloatGenerator : IEnumerable<float>
 {
     private Random _random = new Random();
+
     public IEnumerator<float> GetEnumerator()
     {
         int count = 0;
