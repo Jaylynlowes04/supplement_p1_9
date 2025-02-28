@@ -5,7 +5,11 @@
 public class Quarter
 {
     private float value;
-    
+    /// <summary>
+    /// Initializes a new instance of the Quarter class with a specified value.
+    /// </summary>
+    /// <param name="value">A float number with the range of 0.0-1.0</param>
+    /// <exception cref="ArgumentOutOfRangeException">Throw if value is outside the specified range.</exception>
     public Quarter(float value)
     {
         if (value < 0.0f || value >= 1.0f)
