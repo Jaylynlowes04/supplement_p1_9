@@ -1,8 +1,11 @@
 ﻿namespace Supplement_P1_9v2;
-
+/// <summary>
+///A quarter in the range [0.0, 1.0) that provides the operator overloading for comparison.
+/// </summary>
 public class Quarter
 {
     private float value;
+    
     public Quarter(float value)
     {
         if (value < 0.0f || value >= 1.0f)
