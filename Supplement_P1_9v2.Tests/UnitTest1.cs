@@ -21,4 +21,15 @@ public class UnitTest1
             }
         });
     }
+
+    [Fact]
+    public void TestQuarterEquality()
+    {
+        var q1 = new Quarter(0.1f);
+        var q2 = new Quarter(0.2f);
+        var q3 = new Quarter(0.3f);
+
+        Assert.True(q1 == q2);
+        Assert.False(q1 == q3);
+    }
 }
